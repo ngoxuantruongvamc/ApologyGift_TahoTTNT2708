@@ -1,200 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💎💖👑 Taho-TTNT2708 👑💎💖 — White Aurora Neutral Glow Edition</title>
-
-<!-- FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lexend:wght@300;400&display=swap" rel="stylesheet">
+<title>TahoTTNT2708 💖 Anh Yêu Em, Vợ Tôi 💎</title>
 
 <style>
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* NỀN CHUYỂN ĐỘNG XÁM BẠC */
 body {
-  height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: linear-gradient(135deg,#c9c9c9,#e0e0e0,#d8d8d8,#f2f2f2,#e5e5e5);
-  background-size: 400% 400%;
-  animation: aurora 20s ease infinite;
-  overflow: hidden;
-  position: relative;
-  color: #ffffff;
+  margin:0;
+  padding:0;
+  font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at 30% 50%, #f9fafb, #e2e8f0, #dbeafe, #fce7f3, #f9a8d4);
+  background-size:400% 400%;
+  animation:bgflow 25s ease infinite;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:100vh;
+  overflow-x:hidden;
 }
-@keyframes aurora {
+@keyframes bgflow {
   0%{background-position:0% 50%;}
   50%{background-position:100% 50%;}
   100%{background-position:0% 50%;}
 }
 
-/* HỘP GLASS */
-.glass {
-  position: relative;
-  width: 90%;
-  max-width: 950px;
-  text-align: center;
-  padding: 30px;
-  border-radius: 25px;
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.35);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 25px rgba(0,0,0,0.25);
-  overflow: hidden;
+h1 {
+  font-size:42px;
+  margin-top:20px;
+  text-shadow:0 0 20px #f9a8d4,0 0 40px #bae6fd,0 0 70px #fbcfe8;
+  animation:breath 5s infinite alternate;
 }
-/* LED VIỀN */
-.glass::before {
-  content: "";
-  position: absolute;
-  top: -2px; left: -2px; right: -2px; bottom: -2px;
-  border-radius: 25px;
-  background: linear-gradient(60deg,
-    #ff0080,#ff8c00,#40e0d0,#8a2be2,#ff1493,#00ffff,#ffd700);
-  background-size: 600% 600%;
-  filter: blur(10px);
-  animation: led 10s linear infinite;
-  z-index: -1;
-}
-@keyframes led {
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+@keyframes breath {
+  0%{text-shadow:0 0 10px #f9a8d4,0 0 25px #bae6fd;}
+  100%{text-shadow:0 0 20px #f9a8d4,0 0 55px #bae6fd;}
 }
 
-/* HEADER */
-.header { margin-bottom: 25px; }
-.header h1 {
-  font-family: 'Lexend', sans-serif;
-  font-size: 26px;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0,0,0,0.4);
-  margin-bottom: 8px;
-}
-.header h2 {
-  font-size: 14px;
-  color: #f9f9f9;
-  opacity: 0.9;
-}
-
-/* GRID 3×1 */
-.button-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-content: center;
-  margin-top: 25px;
+.container {
+  width:85%;
+  max-width:800px;
+  background:rgba(255,255,255,0.08);
+  border-radius:22px;
+  padding:35px;
+  backdrop-filter:blur(14px);
+  box-shadow:0 0 30px rgba(255,255,255,0.12);
+  line-height:1.9;
+  font-size:18px;
+  color:#f1f5f9;
+  text-shadow:0 0 10px #fbcfe8;
+  animation:fadeIn 3s ease;
 }
 
-/* NÚT CHÍNH */
-.btn {
-  padding: 25px 10px;
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.15);
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(8px);
-  text-shadow: 0 0 6px rgba(0,0,0,0.3);
-}
-.btn span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #e8e8e8;
-  margin-top: 4px;
-}
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #fff;
-  background: rgba(255,255,255,0.25);
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(25px);}
+  to {opacity:1; transform:translateY(0);}
 }
 
-/* FOOTER LED STRIP */
+p {
+  margin:15px 0;
+  animation:scrollUp 1s ease both;
+}
+@keyframes scrollUp {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
 .footer {
-  margin-top: 30px;
-  font-size: 14px;
-  color: #ffffff;
-  opacity: 0.85;
-  text-shadow: 0 0 5px rgba(255,255,255,0.6);
-}
-.footer span { font-weight: 600; color: #fff; }
-
-/* RESPONSIVE */
-@media (max-width:700px){
-  .button-grid{grid-template-columns:1fr;}
-  .btn{font-size:16px;}
+  margin-top:40px;
+  font-size:16px;
+  color:#e2e8f0;
+  text-shadow:0 0 10px #bae6fd;
+  animation:breath 5s infinite alternate;
 }
 </style>
 </head>
 
 <body>
-  <div class="glass">
-    <div class="header">
-      <h1>💎💖👑 Taho-TTNT2708 👑💎💖 — White Aurora Neutral Glow Edition</h1>
-      <h2>🎁 Apology gift from husband Minh Nhut ❤️ to Nguyen Thao 270824 ❤️</h2>
-    </div>
+<h1>💎💖👑 TahoTTNT2708 — Anh Yêu Em, Vợ Tôi 👑💖💎</h1>
 
-    <div class="button-grid">
-      <button class="btn" onclick="window.location.href='Downloader_VIP.html'">
-        💖 MN270 💖
-        <span>Downloader</span>
-      </button>
+<div class="container">
+  <p>💖 <b>Hôm nay, 20/10</b>, cũng gần 1 năm 2 tháng mình bên nhau – quãng thời gian tuy không quá dài nhưng đủ để anh hiểu rằng, <b>hạnh phúc thật sự chính là có em bên cạnh</b> 💞</p>
 
-      <button class="btn" onclick="window.location.href='CameraPro_VIP.html'">
-        💖 I Love You 💖
-        <span>Camera Pro</span>
-      </button>
+  <p>Đời anh không có em, nó trống trải và tẻ nhạt lắm…</p>
 
-      <button class="btn" onclick="window.location.href='BaoKyPro_Full_Aurora.html'">
-        💖 TTNT824 💖
-        <span>BaoKyPro</span>
-      </button>
-    </div>
+  <p>Anh biết, có những lúc anh nghỉ đơn giản khi hứa trả em nhưng không đúng hẹn, làm em hy vọng rồi thất vọng. Anh xin lỗi vì đã để em buồn, để em chờ, và sau này sẽ là lần cuối anh không để em thất vọng thêm bất kỳ lần nào nữa 💖</p>
 
-    <div class="footer">
-      Aurora Control Center — <span>LED 7 màu dịu mắt</span> • Resize ↕↔ • Blur kính mờ 12px
-    </div>
-  </div>
+  <p>Anh hứa sẽ nghĩ kỹ khi hứa với vợ anh một vấn đề gì đó. Từ hôm nay sẽ là cái lễ cuối cùng em ở một mình. Về sau, dịp lễ nào anh cũng sẽ về bên em – không để em gồng mình hay cô đơn thêm lần nào nữa 🕊️</p>
+
+  <p>Chuẩn bị tới đây là lễ <b>Noel</b>, anh sẽ về đón cùng em như Noel năm đầu của hai chúng ta 🎄</p>
+
+  <p>Những lần anh thất hứa, anh sẽ sửa đổi để dung hòa cùng em. Anh không thất hứa nữa, và anh sẽ thực hiện dần, từng điều một – kể từ hôm nay cho đến khi anh được cưới em, được gọi em là <b>Vợ thật sự của anh</b> 💍</p>
+
+  <p>Anh sẽ không bao giờ làm em ghét anh, quạo anh, hay khiến em buồn. Vì thế giới của anh khi không có em – thật đáng sợ 🥺</p>
+
+  <p>Anh có một chuyện muốn nói… ngày trước anh đòi yêu khi em mệt, nhưng lại dỗi. Anh nhiều lần muốn mở lời xin lỗi vì lúc đó anh không an ủi, không là chỗ dựa cho em mà chỉ nghĩ đến bản thân. Anh biết lỗi – <b>Anh xin lỗi Vợ của Anh</b> 😊💞</p>
+
+  <p>Sau này mỗi ngày lễ, anh sẽ tặng <b>hoa Linh Lan</b> cho Vợ, cho đến khi nào em đồng ý gọi anh là Chồng. Vì anh tin – loài hoa ấy sẽ mang điều anh ước thành thật ❤️</p>
+
+  <p>Khi Vợ nói “hết tình cảm”, anh đã nhìn lại tất cả… Anh yêu em, nhưng yêu chưa đúng cách. Cảm ơn em vì đã phá vỡ mọi nguyên tắc, bao dung cho anh, để anh được thay đổi và trở nên xứng đáng hơn ❤️</p>
+
+  <p>Cảm ơn em vì vẫn ở lại, vẫn yêu anh bằng cả tấm lòng. Chúc Em 20/10 thật hạnh phúc – vì Em xứng đáng với tất cả yêu thương trên đời này 💐</p>
+
+  <p>💖 Anh yêu Em – hôm nay, mai sau và mãi mãi 💖</p>
+
+  <p>— Minh Nhựt 💎💖👑</p>
+</div>
+
+<div class="footer">
+💎 Made with Love by <b>Minh Nhựt</b> — For <b>Nguyễn Thảo 270824</b> 💖<br>
+<b>1314 — One Life, One Love, Forever Only You</b><br>(一生一世 只爱你一人)
+</div>
 </body>
-</<section class="aurora-love-message">
-  <h2>💎💖 Thư gửi Vợ yêu – 20/10 💖💎</h2>
-  <p>
-    Hôm nay 20/10, cũng gần 1 năm 2 tháng mình bên nhau – quãng thời gian tuy không quá dài 
-    nhưng đủ để anh hiểu rằng, hạnh phúc thật sự chính là có em bên cạnh, đời anh không có em nó trống trãi và tẻ nhạt lắm! 💞
-  </p>
-  <p>
-    Anh biết, có những lúc anh nghỉ đơn giản khi hứa trả em nhưng không đúng hẹn làm em hy vọng rồi thất vọng. 
-    Anh xin lỗi vì đã để em buồn, để em chờ... Sau này sẽ là lần cuối anh để em thất vọng thêm bất kỳ lần nào nữa.
-  </p>
-  <p>
-    Từ hôm nay sẽ là cái lễ cuối cùng em ở một mình. Dịp Noel tới, anh sẽ về đón cùng em — 
-    như Noel năm đầu của hai chúng ta. 🌲
-  </p>
-  <p>
-    Những lần anh thất hứa, anh sẽ sửa đổi để dung hòa cùng em. 
-    Anh sẽ thực hiện từng điều một – kể từ hôm nay cho đến khi anh được cưới em, 
-    được gọi em là vợ thật sự của anh 💍. 
-  </p>
-  <p>
-    Anh xin lỗi vì ngày trước khi em mệt anh lại giận dỗi, vì đã không là chỗ dựa cho em, 
-    chỉ nghĩ đến bản thân. Anh biết lỗi. Anh xin lỗi Vợ của Anh – đừng giận anh nữa nhé ❤️
-  </p>
-  <p>
-    Sau này mỗi dịp lễ anh sẽ tặng hoa Linh Lan cho em, 
-    cho đến khi em đồng ý để anh gọi em là Vợ. 
-    Anh tin rằng loài hoa ấy sẽ mang lại điều anh ước — rằng anh và em sẽ thành đôi mãi mãi 💐
-  </p>
-  <p>
-    Cảm ơn em vì luôn bao dung, vì vẫn ở lại, vẫn yêu anh bằng cả tấm lòng.
-    Chúc em 20/10 thật hạnh phúc – vì em xứng đáng với tất cả yêu thương trên đời này 💖  
-    <b>Anh yêu em – hôm nay, mai sau và mãi mãi 💖</b>
-  </p>
-</section>
+</html>
