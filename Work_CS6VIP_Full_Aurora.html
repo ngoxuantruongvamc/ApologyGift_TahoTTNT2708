@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💎 Work_CS6VIP_Full_Aurora — TahoTTNT2708 💎</title>
+  <link rel="stylesheet" href="assets/theme.css" />
+  <script defer src="modules/cs6_unified.js"></script>
+  <script defer src="modules/canva_library.js"></script>
+  <script defer src="modules/pdf_editor.js"></script>
+</head>
+
+<body>
+  <header class="aurora-header">
+    <h1>💎💖👑 Work_CS6VIP_Full_Aurora 👑💖💎</h1>
+    <p>Apology Gift from Husband Minh Nhut ❤️ to Beloved Wife Nguyen Thao 270824 ❤️</p>
+  </header>
+
+  <div class="main-container glass">
+
+    <!-- TAB MENU -->
+    <div class="tab-menu">
+      <button class="tab-btn active" data-tab="canva">🎨 Canva Editor</button>
+      <button class="tab-btn" data-tab="cs6">🖌️ CS6 Pro Tools</button>
+      <button class="tab-btn" data-tab="pdf">📄 PDF Editor</button>
+      <button class="tab-btn" data-tab="ai">🤖 AI Tools</button>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- Canva -->
+      <div id="canva" class="tab-panel active">
+        <h2>Canva VIP — Thiết kế Mạng Xã Hội</h2>
+        <p>🧩 Kéo thả, chỉnh font, màu, nền, hiệu ứng, preset cho IG / FB / TikTok / YouTube...</p>
+        <canvas id="canvaEditor"></canvas>
+        <div id="canvaToolbar">
+          <button onclick="addText()">🅰️ Thêm chữ</button>
+          <button onclick="addImage()">🖼️ Thêm ảnh</button>
+          <button onclick="addShape()">⬛ Thêm hình</button>
+          <button onclick="exportCanva()">💾 Xuất</button>
+        </div>
+      </div>
+
+      <!-- CS6 -->
+      <div id="cs6" class="tab-panel">
+        <h2>CS6 VIP — Chỉnh sửa Ảnh Chuyên Nghiệp</h2>
+        <input type="file" id="photoInput" accept="image/*" />
+        <canvas id="photoCanvas"></canvas>
+        <div class="toolbox">
+          <button onclick="adjustBrightness()">☀️ Sáng</button>
+          <button onclick="adjustContrast()">🌗 Tương phản</button>
+          <button onclick="applyFilter()">🎞️ Lọc màu</button>
+          <button onclick="saveCS6()">💾 Lưu</button>
+        </div>
+      </div>
+
+      <!-- PDF -->
+      <div id="pdf" class="tab-panel">
+        <h2>PDF Editor Pro — Chỉnh sửa & Ký tài liệu</h2>
+        <input type="file" id="pdfFile" accept="application/pdf" />
+        <div id="pdfViewer"></div>
+        <div id="pdfToolbar">
+          <button onclick="addHighlight()">🖍️ Highlight</button>
+          <button onclick="addNote()">📝 Ghi chú</button>
+          <button onclick="addImagePDF()">🖼️ Ảnh</button>
+          <button onclick="signPDF()">✍️ Ký tên</button>
+          <button onclick="savePDF()">💾 Xuất PDF</button>
+        </div>
+      </div>
+
+      <!-- AI Tools -->
+      <div id="ai" class="tab-panel">
+        <h2>AI Studio — Công cụ trí tuệ nhân tạo</h2>
+        <p>✨ GFPGAN / RealESRGAN / CodeFormer / RemoveBG / Inpaint</p>
+        <input type="file" id="aiFile" accept="image/*,video/*" />
+        <div id="aiResult"></div>
+        <button onclick="applyAI('enhance')">⚡ Tăng nét</button>
+        <button onclick="applyAI('restore')">💆‍♀️ Khôi phục khuôn mặt</button>
+        <button onclick="applyAI('removebg')">🧼 Xóa nền</button>
+        <button onclick="applyAI('inpaint')">🪄 Xóa vật thể</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="aurora-footer">
+    <p>Aurora Control Center — chỉnh LED, font, màu, co giãn ↕↔ | White–Silver Glow Edition</p>
+  </footer>
+</body>
+</html>

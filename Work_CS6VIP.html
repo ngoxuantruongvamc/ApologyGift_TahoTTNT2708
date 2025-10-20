@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💎 Work_CS6VIP — White Aurora FullGift</title>
+<link rel="stylesheet" href="assets/theme.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="glass aurora-frame">
+  <h2 style="text-align:center;">💎 Work CS6 VIP — Canva Full Edition</h2>
+  <div class="toolbar"></div>
+
+  <h3>📚 Thư viện Canva VIP — Chọn mẫu</h3>
+  <div id="canva-library"></div>
+
+  <div class="editor-canvas aurora-frame">
+    🎨 Kéo-thả, thêm chữ, hình, hoặc mở PDF tại đây
+  </div>
+</div>
+
+<script src="modules/cs6_unified.js"></script>
+<script src="modules/canva_library.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", ()=>{
+  initCS6Editor();
+  loadCanvaLibrary();
+});
+</script>
+</body>
+</html><!-- Thêm thư viện pdf-lib -->
+<script type="module">
+import { initCS6Editor } from "./modules/cs6_unified.js";
+import { initPDFToolbar } from "./modules/pdf_editor.js";
+import { loadCanvaLibrary } from "./modules/canva_library.js";
+
+window.addEventListener("DOMContentLoaded", () => {
+  initCS6Editor();
+  initPDFToolbar();
+  loadCanvaLibrary();
+});
+</script>

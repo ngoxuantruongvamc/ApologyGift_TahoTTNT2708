@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>💎 White Aurora Glass – BaoKyPro Full</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  background:linear-gradient(135deg,#e5e7eb,#f3e8ff,#ffe4f0,#f0f9ff);
+  background-size:400% 400%;
+  animation:auroraMove 20s ease-in-out infinite;
+}
+
+@keyframes auroraMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* ===== Aurora Header ===== */
+.header{
+  text-align:center;
+  padding:25px 40px;
+  border-radius:18px;
+  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,0.25);
+  border:1px solid rgba(255,255,255,0.4);
+  box-shadow:0 0 20px rgba(255,255,255,0.3),0 0 60px rgba(210,210,255,0.4);
+  color:#fff;
+  margin-bottom:30px;
+  animation:headerGlow 6s linear infinite;
+}
+@keyframes headerGlow{
+  0%,100%{box-shadow:0 0 25px #f0f9ff;}
+  50%{box-shadow:0 0 35px #ffbdf7;}
+}
+.header h1{
+  font-size:28px;
+  font-weight:600;
+  color:#fff;
+  text-shadow:0 0 8px rgba(255,255,255,0.8);
+}
+.header p{
+  font-size:15px;
+  margin-top:6px;
+  color:#fdf2f8;
+}
+
+/* ===== 3 Buttons Row ===== */
+.main-buttons{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  width:160px;
+  height:90px;
+  border-radius:18px;
+  background:rgba(255,255,255,0.25);
+  border:1px solid rgba(255,255,255,0.5);
+  color:#fff;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(255,255,255,0.25);
+  transition:all 0.3s ease;
+  backdrop-filter:blur(8px);
+}
+.btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 35px #d8b4fe,0 0 55px #fde68a;
+}
+.btn span{
+  display:block;
+  font-size:13px;
+  font-weight:400;
+  color:#fdf2f8;
+  margin-top:4px;
+}
+
+/* ===== LED Border Animation ===== */
+@keyframes ledGlow{
+  0%{filter:drop-shadow(0 0 5px #f0f9ff);}
+  50%{filter:drop-shadow(0 0 15px #d8b4fe);}
+  100%{filter:drop-shadow(0 0 5px #f0f9ff);}
+}
+.glow-border{
+  animation:ledGlow 3s ease-in-out infinite;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header glow-border">
+  <h1>💎💖👑 NMN270Taho 💖💖 BaoKyTTNT824 👑💖💎</h1>
+  <p>White Aurora Glass – Apology Gift From Husband Minh Nhut ❤️ To Wife Nguyen Thao 270824 ❤️</p>
+</div>
+
+<div class="main-buttons">
+  <button class="btn glow-border" onclick="openTab('photo')">💎 ẢNH 💎<span>CS6 VIP Photo Editor</span></button>
+  <button class="btn glow-border" onclick="openTab('work')">💎 WORK 💎<span>Canva/WPS Designer</span></button>
+  <button class="btn glow-border" onclick="openTab('video')">💎 VIDEO 💎<span>CapCut AI Studio</span></button>
+</div>
+
+<script>
+function openTab(tab){
+  alert("Chuyển sang tab: "+tab);
+}
+</script>
+
+</body><!-- ===================== PART 2 – 3 TAB: ẢNH / WORK / VIDEO ===================== -->
+<style>
+.tab-container{
+  width:90%;
+  max-width:1000px;
+  margin-top:40px;
+  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:20px;
+  box-shadow:0 0 25px rgba(255,255,255,0.25);
+  padding:25px;
+  display:none;
+  color:#fff;
+}
+
+.tab-header{
+  text-align:center;
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:10px;
+  color:#fff;
+  text-shadow:0 0 6px rgba(255,255,255,0.8);
+}
+
+/* nút đóng */
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:20px;
+  background:rgba(255,255,255,0.2);
+  border:none;
+  border-radius:50%;
+  width:32px;
+  height:32px;
+  font-size:18px;
+  color:#fff;
+  cursor:pointer;
+}
+.close-btn:hover{background:rgba(255,255,255,0.4);}
+</style>
+
+<!-- ẢNH -->
+<div id="tab-photo" class="tab-container glow-border">
+  <button class="close-btn" onclick="closeTab('photo')">×</button>
+  <div class="tab-header">📸 Trình Chỉnh Ảnh CS6 VIP</div>
+  <p>• Cắt xén, xoay, thay đổi kích thước.<br>
+     • Công cụ AI: Remove BG, Enhance (GFPGAN / Real-ESRGAN), Color Transfer.<br>
+     • Inpaint xóa vật thể, lọc màu film, ghép mặt InSwapper + GFPGAN.<br>
+     • Thêm chữ, logo, sticker và xuất ảnh định dạng JPG / PNG.</p>
+</div>
+
+<!-- WORK -->
+<div id="tab-work" class="tab-container glow-border">
+  <button class="close-btn" onclick="closeTab('work')">×</button>
+  <div class="tab-header">🧩 Trình Thiết Kế WORK / Canva / PDF</div>
+  <p>• Kho mẫu mạng xã hội (FB, IG, TikTok, Poster, Slide).<br>
+     • Chỉnh sửa văn bản trong PDF, thay ảnh trực tiếp.<br>
+     • AI Design Tools – Auto Layout, Smart Align, Replace Background.<br>
+     • Xuất file PNG, JPG hoặc PDF /WPSPROJ để lưu dự án.</p>
+</div>
+
+<!-- VIDEO -->
+<div id="tab-video" class="tab-container glow-border">
+  <button class="close-btn" onclick="closeTab('video')">×</button>
+  <div class="tab-header">🎬 Trình Dựng VIDEO CapCut AI Studio</div>
+  <p>• Cắt, ghép, thêm hiệu ứng và âm thanh.<br>
+     • Xóa watermark, AI Enhance Video, FaceSwap video.<br>
+     • Timeline đa track (video + audio + text + FX).<br>
+     • Xuất MP4 H.264 1080p/4K – preset TikTok / IG / YouTube.</p>
+</div>
+
+<script>
+function openTab(tab){
+  document.querySelectorAll('.tab-container').forEach(e=>e.style.display='none');
+  document.getElementById('tab-'+tab).style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function closeTab(tab){
+  document.getElementById('tab-'+tab).style.display='none';
+}
+</script><!-- ===================== PART 3 – AURORA CONTROL CENTER + THƠ 20/10 ===================== -->
+<style>
+/* ==== Aurora Control Center ==== */
+.control-center{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  text-align:center;
+  padding:10px 0;
+  background:rgba(255,255,255,0.15);
+  border-top:1px solid rgba(255,255,255,0.4);
+  backdrop-filter:blur(10px);
+  color:#fff;
+  font-weight:500;
+  font-size:14px;
+  box-shadow:0 -2px 15px rgba(255,255,255,0.25);
+  z-index:50;
+  animation:ledBar 6s linear infinite;
+}
+@keyframes ledBar{
+  0%{box-shadow:0 -2px 15px #d8b4fe;}
+  50%{box-shadow:0 -2px 25px #fbcfe8;}
+  100%{box-shadow:0 -2px 15px #d8b4fe;}
+}
+
+/* ==== LED Vertical Scroll Text ==== */
+.led-scroll{
+  position:fixed;
+  right:15px;
+  bottom:80px;
+  width:280px;
+  height:320px;
+  overflow:hidden;
+  border-radius:15px;
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.4);
+  backdrop-filter:blur(10px);
+  color:#fff;
+  padding:15px;
+  font-size:14px;
+  line-height:1.6;
+  text-align:left;
+  box-shadow:0 0 20px rgba(255,255,255,0.25);
+}
+
+.scroll-content{
+  display:inline-block;
+  animation:scrollUp 45s linear infinite;
+  white-space:normal;
+}
+@keyframes scrollUp{
+  0%{transform:translateY(100%);}
+  100%{transform:translateY(-100%);}
+}
+
+/* Glow chữ */
+.led-scroll p{
+  text-shadow:0 0 6px #fff,0 0 12px #f9a8d4;
+}
+</style>
+
+<!-- ==== Control Center ==== -->
+<div class="control-center glow-border">
+  💎 Aurora Control Center — Left: Config • Right: Theme • Drag: Resize 💎
+</div>
+
+<!-- ==== LED Scroll Poetry ==== -->
+<div class="led-scroll glow-border">
+  <div class="scroll-content">
+    <p>
+Hôm nay 20/10, cũng gần 1 năm 2 tháng mình bên nhau – <br>
+quãng thời gian tuy không quá dài nhưng đủ để anh hiểu rằng, <br>
+hạnh phúc thật sự chính là có em bên cạnh, đời anh không có em nó trống trãi và tẻ nhạt lắm!<br><br>
+
+Anh biết, có những lúc anh nghĩ đơn giản khi hứa trả em nhưng không đúng hẹn <br>
+làm em hy vọng rồi thất vọng. Anh xin lỗi vì đã để em buồn, để em chờ, và sau này <br>
+sẽ là lần cuối anh không để em thất vọng thêm bất kì lần nào... <br><br>
+
+Từ hôm nay sẽ là cái lễ cuối cùng em ở một mình. Anh sẽ về đón Noel với em, <br>
+như năm đầu của hai chúng ta. Những lần anh thất hứa, anh sẽ sửa để dung hòa với em, <br>
+từng ngày, từng điều – cho đến khi anh được cưới em, được gọi em là vợ thật sự 💍<br><br>
+
+Anh xin lỗi vì những lúc làm em tổn thương, vì những lúc em phải gồng mình một mình. <br>
+Cảm ơn em vì đã luôn bao dung, vì vẫn ở lại và vẫn yêu anh bằng cả tấm lòng. <br><br>
+
+💖 Anh yêu em – hôm nay, mai sau và mãi mãi 💖
+    </p>
+  </div>
+</div>
+</html>
